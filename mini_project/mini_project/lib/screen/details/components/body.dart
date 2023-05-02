@@ -6,6 +6,7 @@ import 'color_and_size.dart';
 import 'description.dart';
 import 'product_tittle_with_image.dart';
 import 'add.dart';
+import 'counter.dart';
 
 class Body extends StatelessWidget {
   final Product product;
@@ -28,13 +29,13 @@ class Body extends StatelessWidget {
               children: <Widget>[
                 Container(
                   margin: EdgeInsets.only(top: size.height * 0.3),
-                  padding: EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                     top: 100,
                     left: kDefaultPaddin,
                     right: kDefaultPaddin,
                   ),
 
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(25),
@@ -44,11 +45,11 @@ class Body extends StatelessWidget {
                   child: Column(
                     children: <Widget>[
                       ColorAndSize(product: product),
-                      SizedBox(height: kDefaultPaddin / 2),
+                      const SizedBox(height: kDefaultPaddin / 2),
                       Description(product: product),
-                      SizedBox(height: 50),
-                      CartCounter(),
-                      SizedBox(height: kDefaultPaddin / 2),
+                      const SizedBox(height: 50),
+                      const Counter(),
+                      const SizedBox(height: kDefaultPaddin / 2),
                       AddToCart(product: product)
                     ],
                   ),

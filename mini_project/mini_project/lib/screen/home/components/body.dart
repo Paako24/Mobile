@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:mini_project/screen/details/details_screen.dart';
 import 'package:mini_project/theme.dart';
@@ -8,6 +7,8 @@ import 'package:mini_project/screen/home/components/category.dart';
 import 'package:mini_project/screen/home/components/item_card.dart';
 
 class Body extends StatelessWidget {
+  const Body({super.key});
+
   @override
   Widget build(BuildContext context){
     return Column(
@@ -20,7 +21,7 @@ class Body extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal : kDefaultPaddin),
             child: GridView.builder(
               itemCount: products.length,
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                  crossAxisCount: 2,
                   mainAxisSpacing: kDefaultPaddin,
                   crossAxisSpacing: kDefaultPaddin,

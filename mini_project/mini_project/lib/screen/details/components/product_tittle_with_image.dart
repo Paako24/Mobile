@@ -13,13 +13,13 @@ class ProductTittleWithImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: kDefaultPaddin),
+      padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: < Widget > [
           Text(
             product.title,
-            style: TextStyle(fontFamily: "Montserrat", color: Colors.white, fontWeight: FontWeight.bold, fontSize: 35),
+            style: const TextStyle(fontFamily: "Montserrat", color: Colors.white, fontWeight: FontWeight.bold, fontSize: 35),
           ),
           // SizedBox(height: 10),
           // Text(
@@ -36,18 +36,18 @@ class ProductTittleWithImage extends StatelessWidget {
               RichText(
                 text: TextSpan(
                   children: [
-                    TextSpan(
+                    const TextSpan(
                       text: "Price\n",
                       style: TextStyle(fontFamily: "Montserrat", color: Colors.white70,fontSize: 20),
                       ),
                     TextSpan(
                       text: "Rp.${product.price},-",
-                     style: TextStyle(fontFamily: "Montserrat", color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
+                     style: const TextStyle(fontFamily: "Montserrat", color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
               ),
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
               Expanded(child: Hero(
                 tag: "${product.id}", 
                 child: Image.asset(

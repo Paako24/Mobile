@@ -19,7 +19,7 @@ class _MainScreenState extends State<MainScreen>{
         title: const Text('Wisata Jawa Timur'),
         actions: <Widget>[
           IconButton(
-              icon : const Icon(Icons.done_outline),
+              icon : const Icon(Icons.share),
               onPressed: (){
                 Navigator.push(
                   context,

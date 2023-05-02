@@ -14,7 +14,7 @@ class ColorAndSize extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: < Widget > [
-        Expanded(
+        const Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: < Widget > [
@@ -38,16 +38,16 @@ class ColorAndSize extends StatelessWidget {
       Expanded(
         child: RichText(
           text: TextSpan(
-            style: TextStyle(color: kTextColor),
+            style: const TextStyle(color: kTextColor),
             children: [
-                TextSpan(
+                const TextSpan(
                   text: "Size\n",
                   style: TextStyle(fontFamily: "Montserrat", color: Colors.black54, fontSize: 15),
                   ),
                 
                 TextSpan(
                   text: "${product.size} cm",
-                  style: TextStyle(fontFamily: "Montserrat", color: Colors.black, fontWeight: FontWeight.w500,fontSize: 25),
+                  style: const TextStyle(fontFamily: "Montserrat", color: Colors.black, fontWeight: FontWeight.w500,fontSize: 25),
                 ),
               ],
             ),
@@ -71,11 +71,11 @@ class ColorDot extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Container(
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
         top: kDefaultPaddin / 4,
         right: kDefaultPaddin / 2,
       ),
-      padding: EdgeInsets.all(2.5),
+      padding: const EdgeInsets.all(2.5),
       height: 24,
       width: 24,
       decoration: BoxDecoration(

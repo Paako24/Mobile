@@ -25,7 +25,7 @@ class DetailsScreen extends StatelessWidget{
       backgroundColor: product.color, 
       elevation: 0,
       leading: IconButton(
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_back_ios_new,
           color: Colors.white,
         ),
@@ -34,13 +34,13 @@ class DetailsScreen extends StatelessWidget{
       actions: <Widget> [
         IconButton(
           onPressed: (){}, 
-          icon: Icon(Icons.search),
+          icon: const Icon(Icons.search),
         ),
         IconButton(
           onPressed: (){}, 
-          icon: Icon(Icons.shopping_basket),
+          icon: const Icon(Icons.shopping_basket),
         ),
-        SizedBox(
+        const SizedBox(
           width: kDefaultPaddin ,
         ),
       ],

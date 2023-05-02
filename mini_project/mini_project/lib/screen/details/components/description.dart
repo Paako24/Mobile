@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mini_project/theme.dart';
 import 'package:mini_project/model/product.dart';
 
 class Description extends StatelessWidget {
@@ -16,7 +15,7 @@ class Description extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 20),
       child: Text(
         product.description,
-        style: TextStyle(height: 1.5, fontSize: 15),
+        style: const TextStyle(height: 1.5, fontSize: 15),
       ),
     );
   }

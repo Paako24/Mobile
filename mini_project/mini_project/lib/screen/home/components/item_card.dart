@@ -20,7 +20,7 @@ class ItemCard extends StatelessWidget{
         children: <Widget> [
           Expanded(
               child: Container(
-                padding: EdgeInsets.all(kDefaultPaddin),
+                padding: const EdgeInsets.all(kDefaultPaddin),
                 decoration: BoxDecoration(
                   color: product.color,
                   borderRadius: BorderRadius.circular(15),
@@ -35,12 +35,12 @@ class ItemCard extends StatelessWidget{
               padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
               child: Text(
                 product.title,
-                style: TextStyle(color: kTextColor),
+                style: const TextStyle(color: kTextColor),
               ),
           ),
           Text(
             "Rp.${product.price}",
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: const TextStyle(fontWeight: FontWeight.bold),
           ),
         ],
       ),

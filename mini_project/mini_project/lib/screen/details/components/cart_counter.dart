@@ -3,6 +3,8 @@ import 'package:mini_project/theme.dart';
 
 
 class CartCounter extends StatefulWidget {
+  const CartCounter({super.key});
+
   @override
   _CartCounterState createState() => _CartCounterState();
 }
@@ -28,7 +30,7 @@ class _CartCounterState extends State<CartCounter> {
           child: Text(
             // if our item is less  then 10 then  it shows 01 02 like that
             numOfItems.toString().padLeft(2, "0"),
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
         buildOutlineButton(
