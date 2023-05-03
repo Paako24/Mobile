@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:kalkulator/cal.dart';
+import 'package:kal/cal.dart';
+import 'package:kal/cal_provider.dart';
 import 'package:provider/provider.dart';
-import 'package:kalkulator/cal_model.dart';
-import 'package:kalkulator/cal_model.dart';
+
+
 void main() {
   runApp(const MyApp());
 }
@@ -14,11 +15,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (context) => CalculationState(),
+      create: (context) => CalculatorModel(),
       child: MaterialApp(
-        title: 'Kalkulator',
-        home: Calculator(),
-      )
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: CalculatorScreen(),
+      ),
     );
   }
 }
